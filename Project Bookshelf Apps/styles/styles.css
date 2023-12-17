@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2ecc71; 
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#tambah-buku,
+#cari-buku,
+#form-edit {
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-bottom: 1px solid #2ecc71; 
+    padding-bottom: 10px;
+}
+
+#tambah-buku-form,
+#cari-bar,
+#form-edit {
+    background-color: #d1f2eb; 
+    padding: 15px;
+    border: 1px solid #27ae60; 
+    border-radius: 5px;
+}
+
+#tambah-buku-form label,
+#cari-bar label,
+#form-edit label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#tambah-buku-form input,
+#cari-bar input,
+#form-edit input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#tambah-buku-form button,
+#cari-bar button,
+#form-edit button {
+    background-color: #2ecc71; 
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#tambah-buku-form button:hover,
+#cari-bar button:hover,
+#form-edit button:hover {
+    background-color: #27ae60; 
+}
+
+#rak-buku {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d1f2eb; 
+    padding: 20px;
+    border: 1px solid #27ae60; 
+    border-radius: 5px;
+    margin-bottom: 30px;
+} 
+
+#belum-selesai,
+#selesai {
+    flex: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #27ae60; 
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#cari-bar {
+    display: flex;
+    align-items: center; 
+}
+
+#cari-bar label {
+    margin-right: 5px;
+} 
+
+#cari-bar input {
+    flex: 1;
+    margin-right: 5px;
+}
+#cari-bar button {
+    background-color: #2ecc71; 
+    color: #fff;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cari-bar button:hover {
+    background-color: #27ae60; 
+}
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    margin-left: 5px;
+}
+
+.input-group input[type="checkbox"] {
+    margin-right: 5px;
+    align-self: flex-start; 
+}

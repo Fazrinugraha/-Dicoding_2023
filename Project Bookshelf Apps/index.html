@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Bookshelf Apps</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf Apps</h1>
+    </header>
+
+    <div id="app">
+      <div id="tambah-buku">
+        <h2>Tambah Buku</h2>
+        <div id="tambah-buku-form">
+          <label for="judul">Judul:</label>
+          <input type="text" id="judul" placeholder="Masukkan judul buku" />
+
+          <label for="pengarang">Pengarang:</label>
+          <input
+            type="text"
+            id="pengarang"
+            placeholder="Masukkan nama pengarang" />
+
+          <label for="tahun">Tahun Terbit:</label>
+          <input type="number" id="tahun" placeholder="Masukkan tahun terbit" />
+
+          <div class="input-group">
+            <label for="selesai">Sudah Selesai Dibaca</label>
+            <input type="checkbox" id="selesai" />
+          </div>
+
+          <button onclick="tambahBuku()">Tambah Buku</button>
+        </div>
+      </div>
+
+      <div id="cari-buku">
+        <h2>Cari Buku</h2>
+        <div id="cari-bar">
+          <label for="cari">Cari:</label>
+          <input
+            type="text"
+            id="cari"
+            oninput="cariBuku()"
+            placeholder="Cari berdasarkan judul" />
+        </div>
+      </div>
+
+      <div id="rak-buku">
+        <div id="belum-selesai">
+          <h2>Belum Selesai Dibaca</h2>
+          <ul id="belum-selesai-list"></ul>
+        </div>
+      </div>
+
+      <div id="rak-buku">
+        <div id="selesai">
+          <h2>Selesai Dibaca</h2>
+          <ul id="selesai-list"></ul>
+        </div>
+      </div>
+
+      <div id="form-edit"></div>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
